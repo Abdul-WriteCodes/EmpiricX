@@ -42,8 +42,22 @@ html, body, [data-testid="stAppViewContainer"] {
 }
 
 /* ── Hide Streamlit Chrome ──────────────────── */
-#MainMenu, footer, header { display: none !important; }
+/* Hide menu + footer entirely */
+#MainMenu, footer { display: none !important; }
 [data-testid="stDecoration"] { display: none !important; }
+
+/* Hide header CONTENT but keep it in the DOM so the
+   sidebar collapse/expand toggle button stays visible */
+header[data-testid="stHeader"] {
+    background: transparent !important;
+    height: 0 !important;
+    min-height: 0 !important;
+}
+
+/* Keep only the sidebar toggle button visible */
+header[data-testid="stHeader"] > * { display: none !important; }
+[data-testid="collapsedControl"] { display: flex !important; }
+button[kind="header"] { display: flex !important; }
 
 /* ── Sidebar Brand ──────────────────────────── */
 .sidebar-brand {
