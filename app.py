@@ -47,8 +47,7 @@ def _check_password() -> bool:
     # Animated background
     st.markdown('<div class="gate-bg"></div>', unsafe_allow_html=True)
 
-    #col_l, col_c, col_r = st.columns([1, 1.6, 1])
-    col_l, col_c, col_r = st.columns([0.2, 1.6, 0.2])
+    col_l, col_c, col_r = st.columns([1, 1.6, 1])
     with col_c:
         st.markdown('<div class="gate-card">', unsafe_allow_html=True)
 
@@ -106,13 +105,6 @@ def _check_password() -> bool:
 
 
 if not _check_password():
-    st.markdown("""
-    <style>
-    [data-testid="stSidebarCollapsedControl"],
-    [data-testid="stSidebar"] { display: none !important; }
-    [data-testid="stMainBlockContainer"] { padding-top: 2rem !important; }
-    </style>
-    """, unsafe_allow_html=True)
     st.stop()
 
 # ═══════════════════════════════════════════════════════════════════

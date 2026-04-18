@@ -94,12 +94,6 @@ footer { display: none !important; }
   }
 }
 
-/* ── Hide sidebar on gate/login page ── */
-[data-testid="stSidebarCollapsedControl"],
-[data-testid="stSidebar"] {
-  display: none !important;
-}
-
 /* ═══════════════════════════════════════════════════════════
    SIDEBAR
 ═══════════════════════════════════════════════════════════ */
