@@ -23,7 +23,6 @@ def render():
     <div class="ph-wrap anim-up">
         <div class="ph-eye">Step 01 · Analyse</div>
         <h1 class="ph-title">Extraction <span>Results</span></h1>
-        <h1 class="ph-title">Extraction <span class="ph-highlight">Results</span></h1>
         <p class="ph-sub">
             Structured empirical data extracted from each paper.
             Inspect the full table or drill into any paper for detail.

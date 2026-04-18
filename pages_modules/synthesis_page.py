@@ -9,7 +9,7 @@ def render():
     st.markdown("""
     <div class="ph-wrap anim-up">
         <div class="ph-eye">Step 02 · Synthesize</div>
-        <h1 class="ph-title">Cross-Paper <em>Intelligence</em></h1>
+        <h1 class="ph-title">Cross-Paper <span>Insights</span></h1>
         <p class="ph-sub">
             Patterns, conflicts, and gaps synthesized across your entire paper set —
             turning weeks of manual review into minutes of strategic insight.

@@ -9,7 +9,7 @@ def render():
     st.markdown("""
     <div class="ph-wrap anim-up">
         <div class="ph-eye">Step 03 · Export</div>
-        <h1 class="ph-title">Export <em>Intelligence</em></h1>
+        <h1 class="ph-title">Export <span>Results</span></h1>
         <p class="ph-sub">Download your extracted data and synthesis report.</p>
     </div>
     """, unsafe_allow_html=True)
