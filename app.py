@@ -83,7 +83,7 @@ def _check_password() -> bool:
             key="pwd_input",
         )
 
-        enter = st.button("Enter Platform →", use_container_width=True)
+        enter = st.button("Enter Platform →", width='stretch')
 
         if enter or (pwd and pwd == correct):
             if pwd == correct:
@@ -129,15 +129,15 @@ with st.sidebar:
 
     # ── Upload section ─────────────────────────────────────────
     st.markdown('<span class="sb-label">Upload Papers</span>', unsafe_allow_html=True)
-
+    
     uploaded = st.file_uploader(
-        "Drop files",
-        type=["pdf", "docx", "txt"],
-        accept_multiple_files=True,
-        label_visibility="collapsed",
-        help="PDF, DOCX, or TXT · Up to 50 MB each",
-        key="sidebar_uploader",
-    )
+    "",                          # ← empty string, not "Drop files"
+    type=["pdf", "docx", "txt"],
+    accept_multiple_files=True,
+    label_visibility="collapsed",
+    key="sidebar_uploader",
+)
+    
 
     # Queue new uploads into session
     if uploaded:

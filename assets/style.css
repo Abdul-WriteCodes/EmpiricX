@@ -156,6 +156,7 @@ footer { display: none !important; }
 [data-testid="stSidebar"] [data-testid="stFileUploader"] section {
   padding: 1rem !important;
 }
+
 [data-testid="stSidebar"] [data-testid="stFileUploader"] label,
 [data-testid="stSidebar"] [data-testid="stFileUploader"] p,
 [data-testid="stSidebar"] [data-testid="stFileUploader"] span {
@@ -164,6 +165,28 @@ footer { display: none !important; }
   font-family: var(--font-b) !important;
 }
 
+/* ── Fix duplicated "uploadUpload" button text ── */
+[data-testid="stSidebar"] [data-testid="stFileUploaderDropzone"] button span {
+  display: none !important;
+}
+[data-testid="stSidebar"] [data-testid="stFileUploaderDropzone"] button::after {
+  content: "Browse files";
+  color: var(--text-2);
+  font-family: var(--font-b);
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
+}
+
+/* ── Hide default size hint, show custom one ── */
+[data-testid="stSidebar"] [data-testid="stFileUploaderDropzoneInstructions"] small {
+  visibility: hidden;
+  font-size: 0;
+}
+[data-testid="stSidebar"] [data-testid="stFileUploaderDropzoneInstructions"] small::after {
+  content: "200MB per file  ·  PDF, DOCX, TXT";
+  visibility: visible;
+  font-size: clamp(0.72rem, 1.8vw, 0.8rem);
+  color: var(--text-3);
+}
 /* ── Paper pill ── */
 .sb-paper {
   display: flex; align-items: flex-start; gap: 9px;
