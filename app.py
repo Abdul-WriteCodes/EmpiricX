@@ -911,7 +911,7 @@ if not st.session_state.access_granted:
     <nav class="lp-nav fi d1">
       <div class="nav-brand">
         <div class="nav-logo">◈</div>
-        Empiri<em class="brand-em">X</em>
+        Empiric<em class="brand-em">X</em>
       </div>
       <div class="nav-right">
         <span class="nav-tag">Research Intelligence</span>
